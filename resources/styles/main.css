@@ -1,16 +1,40 @@
 body {
     margin: 0px;
     padding: 0px;
-    background-color: var(--darkest);
+    background-color: var(--background);
+    transition: var(--theme-transition);
+}
+
+.content__header {
+    height: 50px;
+    width: 100%;
+    background-color: var(--main);
+    transition: var(--theme-transition);
+}
+
+.content-header__button {
+    width: 30px;
+    height: 30px;
+    float: right;
+    margin: 10px;
+    background-color: var(--theme);
+    transition: var(--theme-transition);
+    border: none;
+    padding: 0px;
+    border-radius: 5px;
+}
+
+.content__section--center {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: calc(100vh - 50px);
 }
 
 .content-percentage {
     padding: 20px;
-    background-color: var(--darker);
+    background-color: var(--section);
+    transition: var(--theme-transition);
     width: min-content;
     border-radius: 10px;
 }
@@ -18,8 +42,9 @@ body {
 .content-percentage__title {
     margin: 0px auto;
     padding: 20px 15px;
-    background-color: var(--dark);
+    background-color: var(--main);
     color: var(--text);
+    transition: var(--theme-transition);
     border-radius: 20px 20px 0px 0px;
     font-size: 30px;
     font-weight: bold;
@@ -29,7 +54,8 @@ body {
 }
 
 .content-percentage__body {
-    background-color: var(--dark);
+    background-color: var(--main);
+    transition: var(--theme-transition);
     border-radius: 20px;
     margin: 0px;
     padding: 20px;
@@ -39,19 +65,22 @@ body {
 .content-percentage__text--center {
     margin: 0px;
     color: var(--text);
+    transition: var(--theme-transition);
     padding: 0px;
     text-align: center;
 }
 
 .content-percentage__text--top {
     padding: 10px;
-    background-color: var(--light);
+    background-color: var(--main-body);
+    transition: var(--theme-transition);
     border-radius: 10px 10px 0px 0px;
     width: 150px;
 }
 
 .content-percentage-body__center {
-    background-color: var(--light);
+    background-color: var(--main-body);
+    transition: var(--theme-transition);
     border-radius: 10px;
     padding: 20px;
 }
@@ -63,6 +92,7 @@ body {
 
 .content-percentage-body-center__bar {
     background-color: var(--empty);
+    transition: var(--theme-transition);
     height: 30px;
     margin: 0px auto;
     border-radius: 4px;
@@ -70,6 +100,7 @@ body {
 
 .content-percentage-body-center-bar__self {
     background-color: var(--bar);
+    transition: var(--theme-transition);
     height: 100%;
     border-radius: 4px;
 }
@@ -78,7 +109,8 @@ body {
     padding: 0px 0px 0px 0px;
     height: 0px;
     overflow: hidden;
-    background-color: var(--light);
+    background-color: var(--main-body);
+    transition: var(--theme-transition);
     transition: 0.5s ease-out;
     border-radius: 0px 0px 10px 10px;
     width: 300px;
@@ -87,7 +119,8 @@ body {
 
 .content-percentage__bottom {
     width: 200px;
-    background-color: var(--dark);
+    background-color: var(--main);
+    transition: var(--theme-transition);
     border-radius: 0px 0px 20px 20px;
     padding: 15px 15px;
     margin: 0px auto;
@@ -97,10 +130,11 @@ body {
 }
 
 .content-percentage__input {
-    background-color: var(--light);
+    background-color: var(--main-body);
+    border: 1px solid var(--section);
+    transition: var(--theme-transition);
     padding: 5px 10px;
     border-radius: 10px;
-    border: 1px solid var(--darker);
     font-size: 18px;
     text-align: center;
     -webkit-appearance: none;
@@ -116,7 +150,7 @@ body {
     }
 
     &::placeholder {
-        color: var(--text-darker);
+        color: var(--text-alt);
     }
 
     &:active {
@@ -128,6 +162,7 @@ body {
     color: var(--text);
     background-color: #00000000;
     border: 2px solid var(--bar);
+    transition: var(--theme-transition);
     padding: 10px 20px;
     transition: 0.2s ease-out;
     cursor: pointer;
@@ -138,7 +173,7 @@ body {
 
     &:hover {
         background-color: var(--bar);
-        color: var(--dark);
+        color: var(--main);
     }
 }
 

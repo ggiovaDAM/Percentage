@@ -1,10 +1,12 @@
 :root {
-    --darkest: #222222;
-    --darker: #333333;
-    --dark: #444444;
-    --light: #555555;
+    --theme: #000080;
+    --background: #222222;
+    --section: #333333;
+    --main: #444444;
+    --main-body: #555555;
     --empty: #111111;
     --bar: #55dd55;
     --text: #ffffff;
-    --text-darker: #cccccc;
+    --text-alt: #cccccc;
+    --theme-transition: background-color 0.3s ease-out, color 0.3s ease-out;
 }

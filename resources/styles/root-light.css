@@ -1,0 +1,12 @@
+:root {
+    --theme: #ffff00;
+    --background: #ffffff;
+    --section: #eeeeee;
+    --main: #dddddd;
+    --main-body: #cccccc;
+    --empty: #111111;
+    --bar: #55dd55;
+    --text: #000000;
+    --text-darker: #222222;
+    --theme-transition: background-color 0.3s ease-out, color 0.3s ease-out;
+}

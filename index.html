@@ -5,31 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Percentage Approximation Game</title>
-    <link rel="stylesheet" href="resources/styles/root-dark.css">
+    <link rel="stylesheet" href="resources/styles/root-light.css">
     <link rel="stylesheet" href="resources/styles/main.css">
 </head>
 
 <body>
-    <div class="content-percentage">
-        <p class="content-percentage__title">Guess the percentage!</p>
-        <div class="content-percentage__body">
-            <div class="content-percentage-body__top">
-                <p class="content-percentage__text--center content-percentage__text--top">Tolerance: <span id="tolerance_span">10%</span>
-                </p>
-                <p class="content-percentage__text--center content-percentage__text--top">Score: <span id="score_span">0</span></p>
-            </div>
-            <div class="content-percentage-body__center">
-                <div id="bar-holder" class="content-percentage-body-center__bar">
-                    <div id="bar" class="content-percentage-body-center-bar__self"></div>
+    <header class="content__header">
+        <button id="content-header__button" class="content-header__button" onclick="switchTheme()">
+            <img id="content-header__theme" src="resources/svg/light.svg" alt="light">
+        </button>
+
+        <script src="resources/scripts/theme.js"></script>
+    </header>
+    <section class="content__section--center">
+        <div class="content-percentage">
+            <p class="content-percentage__title">Guess the percentage!</p>
+            <div class="content-percentage__body">
+                <div class="content-percentage-body__top">
+                    <p class="content-percentage__text--center content-percentage__text--top">Tolerance: <span id="tolerance_span">10%</span>
+                    </p>
+                    <p class="content-percentage__text--center content-percentage__text--top">Score: <span id="score_span">0</span></p>
                 </div>
+                <div class="content-percentage-body__center">
+                    <div id="bar-holder" class="content-percentage-body-center__bar">
+                        <div id="bar" class="content-percentage-body-center-bar__self"></div>
+                    </div>
+                </div>
+                <p id="feedback" class="content-percentage__feedback content-percentage__text--center content-percentage--lighter"></p>
             </div>
-            <p id="feedback" class="content-percentage__feedback content-percentage__text--center content-percentage--lighter">Lorem Ipsum</p>
+            <div class="content-percentage__bottom">
+                <input type="number" id="percentage_guess" placeholder="Guess in %" min="0" max="100" class="content-percentage__input" />
+                <button id="submit" class="content-percentage__button">Submit</button>
+            </div>
         </div>
-        <div class="content-percentage__bottom">
-            <input type="number" id="percentage_guess" placeholder="Guess in %" min="0" max="100" class="content-percentage__input" />
-            <button id="submit" class="content-percentage__button">Submit</button>
-        </div>
-    </div>
+    </section>
 </body>
 
 </html>
